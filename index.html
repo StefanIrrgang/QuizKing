@@ -6,11 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QuizKing</title>
     <script src="script.js"></script>
-    <link rel="icon" href="#"></link>
+    <link rel="icon" href="#">
+    </link>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 
 </head>
-<body>
-    
+
+<body onload="init()">
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">QuizKing</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="card .quiz-card">
+            <img src="/img/pencil.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" id="questiontext">Frage</h5>
+
+                <div class="card quiz-answer-card mb-2" onclick="answer('answer_1')">
+                    <div class="card-body" id="answer_1">
+                        Antwort
+                    </div>
+                </div>
+
+                <div class="card quiz-answer-card mb-2" onclick="answer('answer_2')">
+                    <div class="card-body" id="answer_2">
+                        Antwort
+                    </div>
+                </div>
+
+                <div class="card quiz-answer-card mb-2" onclick="answer('answer_3')">
+                    <div class="card-body" id="answer_3">
+                        Antwort
+                    </div>
+                </div>
+
+                <div class="card quiz-answer-card mb-2" onclick="answer('answer_4')">
+                    <div class="card-body" id="answer_4">
+                        Antwort
+                    </div>
+                </div>
+
+                <div class="question-footer">
+                    <span><b id="question-number">1</b> von <b id="all-questions">5</b> Fragen</span>
+
+                    <button type="button" class="btn btn-primary" disabled id="next-button" onclick="nextQuestion()">Nächste Frage</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
