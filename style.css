@@ -31,3 +31,15 @@ body {
 .bg-success, .bg-danger {
     color: white;
 }
+
+.width-100 {
+    width: 100%;
+}
+
+.width-50 {
+    width: 50%;
+}
+
+.text-center {
+    text-align: center;
+}

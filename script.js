@@ -42,7 +42,8 @@ function init() {
 
 function showQuestion() {
     if (currentQuestion >= questions.length) {
-        
+        document.getElementById('endScreen').style = '';
+        document.getElementById('questionBody').style = 'display: none;';
     } else {
         let question = questions[currentQuestion];
         document.getElementById('question-number').innerHTML = currentQuestion + 1;
