@@ -21,13 +21,22 @@
     </nav>
     <div class="container">
         <div class="card .quiz-card">
-            <img src="/img/pencil.jpg" class="card-img-top" alt="...">
+            <img src="/img/pencil.jpg" id="headerimage" class="card-img-top" alt="...">
+
+            <div class="progress" id="progressBar" role="progressbar" aria-label="Example with label">
+                <div class="progress-bar" style="width: 0%">40%</div>
+            </div>
 
             <div class="card-body" id="endScreen" style="display: none;">
+
                 <div class="text-center">Quiz beendet!</div>
-                <div><img class="width-100" style="height: 300px; object-fit: contain;" src="img/trophy.png" alt=""></div>
-                <div class="text-center"> Du hast xxx Fragen von yyy korrekt beantwortet.
+
+                <div class="text-center"> Du hast <b id="amountRightQuestions">XXX</b> Fragen von <b
+                        id="amountOfQuestions">YYY</b> korrekt beantwortet.
                 </div>
+                <div class="button-row">
+                <button type="button" class="btn btn-primary" id="restart-button" onclick="restartQuiz()">Neustarten</button>
+            </div>
             </div>
 
             <div class="card-body" id="questionBody">

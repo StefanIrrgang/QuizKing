@@ -43,3 +43,20 @@ body {
 .text-center {
     text-align: center;
 }
+
+.card-img-top {
+    height: 240px;
+    object-fit: contain;
+}
+
+.progress {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
